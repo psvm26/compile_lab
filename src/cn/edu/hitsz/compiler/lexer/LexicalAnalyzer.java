@@ -107,6 +107,7 @@ public class LexicalAnalyzer {
                         tokenList.add(Token.simple(id));
                     }else {
                         tokenList.add(Token.normal("id", id));
+                        symbolTable.add(id);
                     }
                     nextState = 0;
                     nowString = new StringBuilder();
