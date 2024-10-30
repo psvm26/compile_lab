@@ -135,9 +135,7 @@ public class SyntaxAnalyzer {
                     callWhenInAccept(topStatus);
                     flag = false;
                 }
-                case Error -> {
-                    flag = false;
-                }
+                case Error -> flag = false;
             }
         }
 //        throw new NotImplementedException();
