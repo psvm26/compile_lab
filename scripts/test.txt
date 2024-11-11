@@ -1,0 +1,1 @@
+python -u check-result.py 3 D:\cs\java\compoling\template\data\out\ D:\cs\java\compoling\template\data\std\ 

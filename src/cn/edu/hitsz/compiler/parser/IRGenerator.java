@@ -86,7 +86,6 @@ public class IRGenerator implements ActionObserver {
                 symbolStack.pop();
                 Symbol lSrcSymbol = symbolStack.pop();
                 nowSymbol.setVal(IRVariable.temp());
-                System.out.println(rSrcSymbol.getNonTerminal());
                 Instruction mulInst = Instruction.createMul((IRVariable) nowSymbol.getVal(), lSrcSymbol.getVal(), rSrcSymbol.getVal());
                 IRList.add(mulInst);
             }
